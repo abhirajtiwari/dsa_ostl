@@ -8,8 +8,7 @@ int main() {
 	enqueue(cq, text3);
 	// printQueue(cq);
 	enqueue(cq, text2);
-	printf("%s\t", peekBack(cq));
-	printf("%s\n", peekFront(cq));
+	printf("%s\t%s\n", peekBack(cq), peekFront(cq));
 	printQueue(cq);
 	dequeue(cq);
 	printQueue(cq);
