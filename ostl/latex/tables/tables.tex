@@ -1,0 +1,21 @@
+\documentclass{article}
+\usepackage{rotating}
+\usepackage{multirow}
+
+\begin{document}
+	\begin{tabular}{|p{1.5cm} |p{1cm} |p{1cm} |p{1cm} |p{1cm} |p{1cm} |p{1cm} |p{1cm} |p{1cm} |p{1cm} |c|}
+		\hline
+		\bfseries DAY & 9-950 & 955-1050 & 1050-1105 & 1105-1200 & 1200-100 & 100-150 & 155-245 & 245-300 & 300-400\\
+		\hline
+		\bfseries MON &  &  & \multirow {5}*{\rotatebox{90}{break}}  & &\multirow {5}*{\rotatebox{90}{lunch}} & & & \multirow {5}*{\rotatebox{90}{break}}&  \\
+		\cline{1-3}\cline{5-5}\cline{7-8}\cline{10-10}
+		\bfseries TUES &  &  & & & & & &  &  \\
+		\cline{1-3}\cline{5-5}\cline{7-8}\cline{10-10}
+%		\bfseries WED &  &  &   & & & & &  &  \\
+		\cline{1-3}\cline{5-5}\cline{7-8}\cline{10-10}
+		\bfseries THURS &  &  & & & & & &  &  \\
+		\cline{1-3}\cline{5-5}\cline{7-8}\cline{10-10}
+		\bfseries FRI &  &  &  & & & & &  &  \\
+		\hline
+	\end{tabular}
+\end{document}
