@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sample Form</title>
+</head>
+<body>
+<h1>Sample form</h1>
+<p align="right">
+	<a href="/home/180905422/code/ostl/html/sample.html">page 1</a>
+	<a href="/home/180905422/code/ostl/html/samplepg2.html">page 2</a>
+</p>
+<form action="" method="POST" id="form1">
+	<table align="center">
+		<tr>
+			<td>Name:</td>
+			<td><input type="text" name="name"> <br></td>
+		</tr>
+		<tr>
+			<td>Password:</td>
+			<td><input type="Password" name="pswd"></td>
+		</tr>
+		<tr>
+			<td valign="top">Gender:</td>
+			<td rowspan="2"><input type="radio" name="gender" value="male">Male<br><input type="radio" name="gender" value="female">Female</td>
+		</tr>
+		<tr></tr>
+		<tr>
+			<td valign="top">Hobbies:</td>
+			<td rowspan="4">
+				<input type="checkbox" name="hobbies1" value="cricket">Cricket <br>
+				<input type="checkbox" name="hobbies2" value="tennis">Tennis <br>
+				<input type="checkbox" name="hobbies3" value="football">Football <br>
+				<input type="checkbox" name="hobbies4" value="other">Others<br>
+			</td>
+		</tr>
+		<tr></tr><tr></tr><tr></tr>
+		<tr>
+			<td>Country</td>
+			<td>
+				<select>
+					<option value="India">India</option>
+					<option value="USA">USA</option>
+					<option value="England">England</option>
+					<option value="Singapore" selected="true">Singapore</option>
+					<option value="Australia">Australia</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<textarea rows="4" cols="45" placeholder="Describe yourself..."></textarea>
+			</td>
+		</tr>
+
+		<tr>
+			<td colspan="2">
+				<fieldset>
+					<legend>Infomation</legend>
+					<input type="text" name="aadhar" placeholder="Aadhar number"><br><br>
+					<input type="text" name="pasprt" placeholder="Passport Number">
+				</fieldset>
+			</td>
+		</tr>
+		<tr>
+			<td><button type="submit" form="form1" value="submit">Submit</button></td>
+			<td><button type="reset">Reset</button></td>
+		</tr>
+	</table>
+</form>
+</body>
+</html>
