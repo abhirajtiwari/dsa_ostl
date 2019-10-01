@@ -38,9 +38,10 @@ void printLL(nodeptr ll) {
     nodeptr iterator = ll;
     int first_time = 1;
     while (iterator->next != NULL || first_time) {
-	first_time = 0;
-	printf("%d ", iterator->val);
-	iterator = iterator->next;
+		first_time = 0;
+		printf("%d ", iterator->val);
+		iterator = iterator->next;
     }
+    printf("%d ", iterator->val);
 }
 
