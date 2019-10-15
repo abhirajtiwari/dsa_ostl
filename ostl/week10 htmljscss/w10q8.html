@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Color Rectangle</title>
+</head>
+<body>
+<script type="text/javascript">
+	function change() {
+		var canv = document.getElementById('myCanvas');
+		if (document.getElementById('red').checked) canv.style['background-color'] = "red";
+		else if (document.getElementById('blue').checked) canv.style['background-color'] = "blue";
+		else if (document.getElementById('green').checked) canv.style['background-color'] = "green";
+	}
+</script>
+
+<input type="radio" name="color" value="red" onchange="change()" id="red">Red <br>
+<input type="radio" name="color" value="blue" onchange="change()" id="blue">Blue <br>
+<input type="radio" name="color" value="green" onchange="change()" id="green">Green <br>
+<canvas id="myCanvas" width="200" height="100"></canvas>
+</body>
+</html>

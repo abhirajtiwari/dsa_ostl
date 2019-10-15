@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sum and Product </title>
+</head>
+<body>
+
+<script type="text/javascript">
+	function compute() {
+		var ta = document.getElementById("input_area");
+		var text = ta.value;
+		var numbers = text.match(/\d+/g).map(Number);
+		var sum = 0;
+		var product = 1;
+		for (var i = numbers.length - 1; i >= 0; i--) {
+			sum+=numbers[i];
+			product*=numbers[i];
+		}
+		alert("Sum is : " + sum + "\nProduct is : " + product);
+	}
+</script>
+
+<textarea rows="1" cols="100" placeholder="Enter values here, separated by spaces" id="input_area"></textarea><br>
+<button onclick="compute()">Compute sum and product</button>
+
+</body>
+</html>

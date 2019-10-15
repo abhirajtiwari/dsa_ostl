@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Add delete items in array</title>
+</head>
+<body>
+<script type="text/javascript">
+	var array = [];
+	function add(value) {
+		array.push(value);
+		document.getElementById("array_out").setAttribute("value", array);
+	}
+
+	function del(value) {
+		for (var i = array.length - 1; i >= 0; i--) {
+			if (array[i] == value) {
+				array.splice(i, 1);
+			}
+		}
+		document.getElementById("array_out").setAttribute("value", array);
+	}
+</script>
+
+<input type="text" name="output" id="array_out"><br>
+<input type="text" name="input" id="word_in" placeholder="Enter word to del/add"><br>
+<button onclick="add(getElementById('word_in').value)">Add the above word</button> 
+<button onclick="del(getElementById('word_in').value)">Delete the above word</button>
+
+</body>
+</html>

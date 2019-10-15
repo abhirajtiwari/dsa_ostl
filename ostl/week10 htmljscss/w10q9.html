@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Validation</title>
+</head>
+<body>
+<script type="text/javascript">
+	function check_name() {
+		var name = document.getElementById('name').value;
+		if (name.match(/[a-z]/g)) {
+			document.getElementById('namesp').style.color = "red";
+			document.getElementById('namesp').innerHTML = ' ✗';
+		}
+		else {
+			document.getElementById('namesp').style.color = "green";
+			document.getElementById('namesp').innerHTML = ' ✓';
+		}
+	}
+
+	function check_number() {
+		var phone = document.getElementById('pnum').value;
+		if (phone.length != 10) {
+			document.getElementById('psp').style.color = "red";
+			document.getElementById('psp').innerHTML = ' ✗';
+		}
+		else {
+			document.getElementById('psp').style.color = "green";
+			document.getElementById('psp').innerHTML = ' ✓';
+		}
+	}
+
+</script>
+
+Name [Only CAPS]: <input type="text" name="name" onkeyup="check_name()" id="name"><span id="namesp"></span><br>
+Password: <input type="password" name="pswd"><br>
+Phone Number: <input type="text" name="pnum" onkeyup="check_number()" id="pnum"><span id="psp"></span>
+</body>
+</html>

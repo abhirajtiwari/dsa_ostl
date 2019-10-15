@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quiz</title>
+</head>
+<body>
+<h1>Online Quiz</h1>
+<script type="text/javascript">
+	function calculate_score() {
+		var score = 0;
+		if (document.getElementById("q11").checked) score += 1;
+		if (document.getElementById("q22").checked) score += 1;
+		if (document.getElementById("q33").checked) score += 1;
+		document.getElementById('Score').innerHTML = " "+score;
+	}
+</script>
+Which color is <span style="color: red">this</span> ? <br>
+<input type="radio" name="q1" id="q11">Red <br>
+<input type="radio" name="q1" id="q12">Green <br>
+<input type="radio" name="q1" id="q13">Blue <br>
+<br>
+Which color is <span style="color: green">this</span> ? <br>
+<input type="radio" name="q2" id="q21">Red <br>
+<input type="radio" name="q2" id="q22">Green <br>
+<input type="radio" name="q2" id="q23">Blue <br>
+<br>
+Which color is <span style="color: blue">this</span> ? <br>
+<input type="radio" name="q3" id="q31">Red <br>
+<input type="radio" name="q3" id="q32">Green <br>
+<input type="radio" name="q3" id="q33">Blue <br>
+<br>
+<button onclick="calculate_score()">Submit</button>
+<br><hr>
+<b>Score:</b><span id="Score"></span>
+
+</body>
+</html>
