@@ -6,6 +6,11 @@ typedef struct {
 	int st[MAXIMUM];
 } STACK;
 
+int isEmpty(STACK* a) {
+	if ((a->top) == -1) return 1;
+	return 0;
+}
+
 void printStack(STACK* a)  { 
 	for (int i = (a->top); i >= 0; --i) { 
 		printf("%d \n", a->st[i]); 
